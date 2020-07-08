@@ -11,4 +11,4 @@ int main(){
     scanf("%f",qui);
     gra = convertePeso(qui);
     printf("O peso é de %.1f gramas. \n", gra);
-}    
+}
