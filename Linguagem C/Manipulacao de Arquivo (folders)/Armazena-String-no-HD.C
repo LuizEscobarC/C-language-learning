@@ -17,11 +17,11 @@ int main(){
     }
     printf("Digite seu texto: \n\n");
 
-    while(strcmp("/exit",linha)!= 0){
+    while(strcmp("sair",linha)!= 0){
         strcpy(linha,"");
         gets(linha);
         fflush(stdin);
-        if(strcmp("/exit", linha) != 0){
+        if(strcmp("sair", linha) != 0){
             fputs(linha,arquivo);
             fputs("\n",arquivo);
         }
