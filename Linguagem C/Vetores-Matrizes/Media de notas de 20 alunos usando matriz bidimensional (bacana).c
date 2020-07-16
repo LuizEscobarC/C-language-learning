@@ -20,16 +20,16 @@ int main()
 			soma = soma + notas[i][j]; 
 			//vai armazenar 4 notas em cadas linha e somar para no final fazer a media de cada um
 		}
-		media[i] = soma/4; // após o primeiro loop ele faz a media a primeira linha e recomça
+		media[i] = soma/4; // apï¿½s o primeiro loop ele faz a media a primeira linha e recomï¿½a
 		somat = somat + media[i]; // aqui acumula a soma de todas as medias de alunos
 	}
-	//nessa parte é feita a media da soma da média de cada aluno
+	//nessa parte ï¿½ feita a media da soma da mï¿½dia de cada aluno
 	mediat = somat/TAM; 
 	
 	for (i = 0; i < TAM; i++)
 	{
-		printf("A média do aluno %d é: %.2f\n",i,media[i]); 
+		printf("A mï¿½dia do aluno %d ï¿½: %.2f\n",i,media[i]); 
 	}
-	printf("A média da turma é: %.2f\n", mediat);
+	printf("A mï¿½dia da turma ï¿½: %.2f\n", mediat);
 	return(0);
 }
