@@ -1,12 +1,6 @@
 #include <stdio.h>
 
-int fatorial (int x)
-{
-    if (x == 0)
-        returno 1;
-    else
-        return x * fatorial(x-1);
-}
+int fatorial (int x);
 
 int main()
 {
@@ -15,4 +9,13 @@ int main()
     scanf("%d", &num);
     resposta =  fatorial(num);
     printf("O fatorial é %d\n", resposta);
+}
+//parametro por valor
+int fatorial (int x)
+{
+    //aqui vai ser executada uma função recurssiva 
+    if (x == 0)
+        returno 1;
+    else
+        return x * fatorial(x-1);
 }
