@@ -4,6 +4,7 @@
 #include<string.h>
 int main()
 {
+	//nivel 2
 	setlocale(LC_ALL,"portuguese");
 	
 	Areacomodo = 0;
@@ -26,7 +27,7 @@ int main()
 		scanf(" %s", nome_comodo);
 	 } 
 	 system("cls");
-	 printf("\n\nA area total da casa é %.2f\n\n", Areatotal);
+	 printf("\n\nA area total da casa ï¿½ %.2f\n\n", Areatotal);
 	 return(0);
 }
 
