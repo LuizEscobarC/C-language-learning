@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main()
+//nivel 6
 {
 	int vetorA[5];
 	int i, acha, busca;
@@ -12,21 +13,21 @@ int main()
 	scanf("%d", &busca);
 	i = 0;
 	acha = 0;
-	while ((acha == 0 ) && (i < 5)) // aqui ele só para se as duas forem verdadeiras?
+	while ((acha == 0 ) && (i < 5)) // aqui ele sï¿½ para se as duas forem verdadeiras?
 	{
 	    if (vetorA[i] ==  busca)
 	    {
-	     	acha = 1; //então mesmo aqui sendo verdadeiro, ele continua?
+	     	acha = 1; //entï¿½o mesmo aqui sendo verdadeiro, ele continua?
 	    }
     	else
 	    {
-		    i++; // o contador vai ser incrementado até o final?        
+		    i++; // o contador vai ser incrementado atï¿½ o final?        
     	}
     }
     if (acha == 1)
-        printf("O elemento %d foi encontrado na posição %d.",busca, i);
+        printf("O elemento %d foi encontrado na posiï¿½ï¿½o %d.",busca, i);
     else
-        printf("O elemento não foi encontrado.");
+        printf("O elemento nï¿½o foi encontrado.");
         return (0);
 }
 
