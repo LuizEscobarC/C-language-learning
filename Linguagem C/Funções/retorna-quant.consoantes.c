@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//nivel 3
 int conta (char nome[])
 {
     int i, tam, qtd;
