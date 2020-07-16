@@ -1,6 +1,6 @@
 #include <stdio.h>
 int fibonacci (int x);
-//nivel 4
+
 int main()
 {
     int num, resposta;
@@ -12,6 +12,7 @@ int main()
 
 int fibonacci (int x)
 {
+    // caso base 
     if ((x == 0)||(x == 1))
         return x;
     else
