@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define max 10
-
+//nivel 5
 int main()
 {
 	char palavra[max];
