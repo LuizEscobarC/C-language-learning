@@ -34,9 +34,8 @@ int main()
 		printf ("\nArquivo não aberto. Erro\n");
 	else
 //le o arquivo e printa na tela linha por linha != null
-//não sei pra que funciona o sizeof (nesse exemplo)
 	{
-		while((fgets(palavra, sizeof(palavra), arq))!=NULL )
+		while((fgets(palavra, max, arq))!=NULL )
 			printf("%s\n", palavra);
 	}
 	fclose(arq);
