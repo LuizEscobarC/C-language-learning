@@ -1,42 +1,46 @@
-#include <stdio .h>
-#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
-int Nconsoantes(char palavra[]);
+#include <stdlib.h>
 
-int main()
-{
-    char palavra[21];
-    int tamanho;
-    printf("Digite um nome qualquer: \n");
-    gets(palavra);
-    tamanho = strlen(palavra);
-    palavra = strupr(palavra);
-    printf("O numero de consoantes da palavra é: %d", tamanho);
+#define max 21
+
+int verifica (char palavra[]);
+
+int main(){
+	char palavra [max];
+	int i, vogais;
+	printf("Digite uma palavra: ");
+	fflush(stdin);
+	scanf("%s",palavra);
+	//chama a função colocando tudo maiusculo com strupr
+	vogais = verifica (strupr(palavra));
+	printf("Total de vogais na palavra: %d\n", vogais);
+	system("pause");
+	return 0;
 }
 
-int Nconsoantes(char palavra[], int tamanho);
+int verifica(char palavra [max])
 {
-    int i, numeroConsoante;
-    while(i <= tamanho)
-    {
-        switch (palavra[i])
-        {
-        case 'A':
-            break;
-        case 'E':
-            break;
-        case 'I':
-            break;
-        case 'O':
-            break;
-        case 'U':
-            break;               
-        default:
-           numeroConsoante++;
-            break;
-        }
-        i++;
-    }
-    return (numeroConsoante);
+	int i, vogais = 0;
+	char letra;
+    //percorre o vetor pegando cada letra
+	for (i = 0; i < max; i++){
+		letra = palavra [i];
+        //se a letra for vogal ele conta
+		switch (letra){
+			case 'A' : vogais++;
+				break;
+			case 'E' : vogais++;
+				break;
+			case 'I' : vogais++;
+				break;
+			case 'O' : vogais++;
+				break;
+			case 'U' : vogais++;
+				break;	
+            //se não somente sai...    
+			default : break;						
+		}
+	}
+	return vogais;
 }
-
