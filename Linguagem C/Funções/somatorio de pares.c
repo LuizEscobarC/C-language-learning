@@ -17,6 +17,8 @@ int somatorio_par (int N)
     int i;
     for (i = 1; i <= N; i++ )
     {
-        N = N + i;
+        if (N % 2 == 0)
+            N = N + i;
     }
+    return N;
 }
