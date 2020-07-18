@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int somatorio_par (int N);
 
 int main()
@@ -13,5 +14,9 @@ int main()
 
 int somatorio_par (int N)
 {
-    
+    int i;
+    for (i = 1; i <= N; i++ )
+    {
+        N = N + i;
+    }
 }
