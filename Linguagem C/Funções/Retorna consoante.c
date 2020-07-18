@@ -24,8 +24,11 @@ int Nconsoantes(char palavra[], int tamanho)
 {
     int i, numeroConsoante = 0;
     char letra;
+    //vai percorrer a string até o barra zero que fica no após o fim da palavra
     while(i <= tamanho)
     {
+        /*cada vez que letra recebe uma letra da cadeira de char palavra
+         ele faz um teste para ver se é vogal ou consoante*/
         letra = palavra[i];
         switch (letra)
         {
