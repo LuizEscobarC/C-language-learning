@@ -21,6 +21,7 @@ typedef struct
 
 void imprimirLista(Cadastro*);
 int  novoCadastro(Cadastro*);
+int ordenar(Cadastro*);
 //main, por enquanto somente duas funções
 int main()
 {
@@ -29,6 +30,7 @@ int main()
 
 	novoCadastro(&cad);
 	imprimirLista(&cad);
+	ordenar(&cad);
 	system("pause");
 	return 0;
 };
@@ -52,7 +54,7 @@ int novoCadastro(Cadastro* cad)
 {
 	Cliente modelo;
 	int i, opcao;
-	
+	//cadastro por quantidade
 	printf("Quantos clientes deseja cadastrar?");
 	scanf("%d",& opcao);
 	for (i=0; i < opcao; i++)
@@ -73,3 +75,8 @@ int novoCadastro(Cadastro* cad)
 	cad->limite = 30;
 	return 1;
 };
+int ordenar (Cadastro* cad)
+{
+	int i, j ;
+	for (i = )
+}
