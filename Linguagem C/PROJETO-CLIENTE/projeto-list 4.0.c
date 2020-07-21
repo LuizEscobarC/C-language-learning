@@ -84,7 +84,7 @@ int ordenar (Cadastro* cad)
 	{
 		for (j = i + 1; j < 30; j++)
 		{
-			if (cad->cl[i] > cad->cl[j])
+			if (cad->cl[i].codigo > cad->cl[j].codigo)
 			{
 				troca = cad->cl[j];
 				cad->cl[j] = cad->cl[i];
@@ -92,4 +92,24 @@ int ordenar (Cadastro* cad)
 			}
 		}
 	}
+	return 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
