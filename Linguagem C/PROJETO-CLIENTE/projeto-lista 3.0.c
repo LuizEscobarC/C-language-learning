@@ -77,6 +77,15 @@ int novoCadastro(Cadastro* cad)
 };
 int ordenar (Cadastro* cad)
 {
-	int i, j ;
-	for (i = )
+	int i, j, troca ;
+	for (i = 0; i < 29; i++)
+	{
+		for (j = i + 1; j < 30; j++)
+		{
+			if (cad->cl[j] > cad->cl[i])
+			{
+				
+			}
+		}
+	}
 }
