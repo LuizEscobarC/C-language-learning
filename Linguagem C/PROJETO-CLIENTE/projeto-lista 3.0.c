@@ -18,10 +18,10 @@ typedef struct
 
 	Cliente	cl[30];
 }	Cadastro;
-/////////////
+
 void imprimirLista(Cadastro*);
 int  novoCadastro(Cadastro*);
-
+//main, por enquanto somente duas funções
 int main()
 {
 	setlocale(LC_ALL,"portuguese");
@@ -32,7 +32,7 @@ int main()
 	system("pause");
 	return 0;
 };
-/////////////
+//função que imprime tudo na tela 
 void imprimirLista(Cadastro* cad)
 {
 	int i;
@@ -46,7 +46,8 @@ void imprimirLista(Cadastro* cad)
 	}
 	return;
 }
-/////////////
+//função que cadastra clientes 
+//por enquanto somente tem memória temporária
 int novoCadastro(Cadastro* cad)
 {
 	Cliente modelo;
@@ -72,7 +73,3 @@ int novoCadastro(Cadastro* cad)
 	cad->limite = 30;
 	return 1;
 };
-
-
-
-
