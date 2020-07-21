@@ -21,7 +21,7 @@ typedef struct
 
 void imprimirLista(Cadastro*);
 int  novoCadastro(Cadastro*);
-int ordenar(Cadastro*);
+int  ordenar(Cadastro*);
 //main, por enquanto somente duas funções
 int main()
 {
@@ -29,8 +29,8 @@ int main()
 	Cadastro	cad;
 
 	novoCadastro(&cad);
-	imprimirLista(&cad);
 	ordenar(&cad);
+	imprimirLista(&cad);
 	system("pause");
 	return 0;
 };
@@ -40,6 +40,7 @@ void imprimirLista(Cadastro* cad)
 	int i;
 	printf("cadastro tem %d de %d clientes\n\n",
 		cad->total, cad->limite);
+		
 	for ( i = 0; i < cad->total; i += 1){ // i = i + 1;
 		printf("\t-----> %d\n", cad->cl[i].codigo);
 		printf("\t%s\n", cad->cl[i].nome);
@@ -76,40 +77,23 @@ int novoCadastro(Cadastro* cad)
 	return 1;
 };
 // ordena do menor para o maior para função imprimirLista
+
+/*Estou com problemas na hora de imprimir, parece que tem algo errado...*/
 int ordenar (Cadastro* cad)
 {
 	int i, j;
-	Cliente troca;
-	for (i = 0; i < 29; i++)
+	Cliente		troca;
+	for (i = 0; i < cad->total - 1; i++)
 	{
-		for (j = i + 1; j < 30; j++)
+		for (j = i + 1; j < cad->total; j++)
 		{
-			if (cad->cl[i].codigo > cad->cl[j].codigo)
+			if ((cad->cl[i].codigo) > (cad->cl[j].codigo))
 			{
-				troca = cad->cl[j];
-				cad->cl[j] = cad->cl[i];
-				cad->cl[i] = troca;
+				troca = cad->cl[i];
+				cad->cl[i] = cad->cl[j];
+				cad->cl[j] = troca;
 			}
 		}
 	}
 	return 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
