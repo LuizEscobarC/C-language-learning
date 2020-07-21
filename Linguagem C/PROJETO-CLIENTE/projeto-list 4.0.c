@@ -29,6 +29,7 @@ int main()
 	Cadastro	cad;
 
 	novoCadastro(&cad);
+	imprimirLista(&cad);
 	ordenar(&cad);
 	imprimirLista(&cad);
 	system("pause");
@@ -77,8 +78,6 @@ int novoCadastro(Cadastro* cad)
 	return 1;
 };
 // ordena do menor para o maior para função imprimirLista
-
-/*Estou com problemas na hora de imprimir, parece que tem algo errado...*/
 int ordenar (Cadastro* cad)
 {
 	int i, j;
