@@ -7,6 +7,7 @@ int fibRec(int n){
         return fibRec(n-1)+fibRec(n-2);
     }
 }
+//retorna o o fibonacci na do numero
 int fibIter(int n){
     int i, j, k, fib;
     k = 1;
