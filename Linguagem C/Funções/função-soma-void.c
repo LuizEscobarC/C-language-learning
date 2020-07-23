@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib>
-
+//aprensentação de uma função vazia que n retorna nada!
 void soma()
 {
     float num1, num2, total;
