@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//tranforma para outra forma de temperatura
 float convertep(float peso);
 
 int main()
